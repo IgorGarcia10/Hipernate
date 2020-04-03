@@ -1,8 +1,11 @@
 package br.usjt.tempo_hibernate;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -13,6 +16,8 @@ public class Dias {
 	
 	private Long id;
 	private String nomeSemana;
+	
+
 	public Long getId() {
 		return id;
 	}
